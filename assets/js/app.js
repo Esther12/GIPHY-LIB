@@ -25,7 +25,7 @@ $("#addButton").on("click", function(){
 
 //give button a name from pinput
 function addButton(name){
-    var html = `<button class = " btn btn-info" onclick="displayGif('${name}')">${name}</button>`;
+    var html = `<button class = " btn btn-info btn-block" onclick="displayGif('${name}')">${name}</button>`;
     return html;
 }
 $("#a").on("click",function(){
