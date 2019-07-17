@@ -9,16 +9,39 @@
     <title>Document</title>
 </head>
 <body>
-    <div class = " col-3">
-        <button class="btn btn-info">A</button>
-        <button class="btn btn-info">B</button>
-        <button class="btn btn-info">C</button>
-        <button class="btn btn-info">D</button>
-    </div>
-    <div class="col-9 d-flex jutify-contant-between">
+    <div class="row col-10 mx-auto">
+            <div id="buttonDisplay" class = "col-3  border">
+                <button class="btn btn-info">A</button>
+                <button class="btn btn-info">B</button>
+                <button class="btn btn-info">C</button>
+                <button class="btn btn-info">D</button>
+            </div>
+            <div class="col-9 border">
+                <div id="gifDisplay" class= "row">
+                        <div class="form-group col-5">
+                                <input id="pInput" class="form-control" type="text" placeholder="Searching contant">
+                        </div>
+                        <div class="form-group col-3">
+                                <input id="limitInput" class="form-control" type="text" placeholder="ImageNumber">
+                        </div>
+                        <div class="form-group col-1">
+                                <select id="ratingInput"class="form-control">
+                                        <option>Y</option>
+                                        <option>G</option>
+                                        <option>PG</option>
+                                        <option>PG-13</option>
+                                        <option>R</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-3">
+                            <button class="btn btn-info" id="addButton">ADD GIF BUTTON</button>
+                        </div>
+                </div>
+                <div id="imageDisplay" class="d-flex jutify-contant-between">
 
-    </div>
-
+                </div>
+            </div>
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
